@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brown-900: #3e2723;
+  --brown-800: #4e342e;
+  --brown-700: #5d4037;
+  --orange-600: #fb8c00;
+  --orange-500: #ff9800;
+  --orange-400: #ffa726;
+  --cream-100: #fff8e1;
+  --cream-50: #fffde7;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-brown-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+.testimonial-slider .slick-dots li button:before {
+  @apply text-orange-500;
+}
+
+.testimonial-slider .slick-dots li.slick-active button:before {
+  @apply text-orange-600;
+}
+
+.testimonial-slider .slick-prev:before,
+.testimonial-slider .slick-next:before {
+  @apply text-orange-600;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .video-container iframe {
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .video-container iframe {
+    width: 177.78vh;
+  }
+}
