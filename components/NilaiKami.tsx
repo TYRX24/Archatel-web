@@ -7,32 +7,32 @@ export const metadata = {
 
 const values = [
   {
-    icon: <Target className="h-12 w-12 text-orange-600" />,
+    icon: <Target className="h-12 w-12 text-[#F4631E]" />,
     title: "Fokus & Presisi",
     description: "Kami menekankan pentingnya fokus dan presisi dalam panahan maupun dalam kehidupan sehari-hari.",
   },
   {
-    icon: <Users className="h-12 w-12 text-orange-600" />,
+    icon: <Users className="h-12 w-12 text-[#F4631E]" />,
     title: "Kebersamaan",
     description: "Kami percaya bahwa kebersamaan dan dukungan komunitas adalah kunci kesuksesan bersama.",
   },
   {
-    icon: <Award className="h-12 w-12 text-orange-600" />,
+    icon: <Award className="h-12 w-12 text-[#F4631E]" />,
     title: "Keunggulan",
     description: "Kami selalu berusaha mencapai standar tertinggi dalam segala aspek kegiatan kami.",
   },
   {
-    icon: <Shield className="h-12 w-12 text-orange-600" />,
+    icon: <Shield className="h-12 w-12 text-[#F4631E]" />,
     title: "Integritas",
     description: "Kami menjunjung tinggi kejujuran, sportivitas, dan etika dalam setiap tindakan.",
   },
   {
-    icon: <Heart className="h-12 w-12 text-orange-600" />,
+    icon: <Heart className="h-12 w-12 text-[#F4631E]" />,
     title: "Passion",
     description: "Kami didorong oleh kecintaan yang mendalam terhadap olahraga panahan.",
   },
   {
-    icon: <Lightbulb className="h-12 w-12 text-orange-600" />,
+    icon: <Lightbulb className="h-12 w-12 text-[#F4631E]" />,
     title: "Inovasi",
     description: "Kami terus berinovasi untuk mengembangkan metode pelatihan dan teknik panahan yang lebih baik.",
   },

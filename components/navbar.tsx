@@ -66,7 +66,7 @@ const Navbar = () => {
             <span
               className={cn(
                 "text-2xl font-bold transition-colors",
-                isScrolled || isOpen ? "text-brown-900" : "text-white",
+                isScrolled || isOpen ? "text-red-600" : "text-white",
               )}
             >
               ARCHATEL
@@ -82,7 +82,7 @@ const Navbar = () => {
                     onClick={toggleAboutDropdown}
                     className={cn(
                       "flex items-center font-medium transition-colors",
-                      isScrolled ? "text-brown-900 hover:text-orange-600" : "text-black hover:text-orange-400",
+                      isScrolled ? "text-brown-900 hover:text-red-600" : "text-red hover:text-red-400",
                     )}
                   >
                     {link.name}
@@ -90,7 +90,7 @@ const Navbar = () => {
                   </button>
                   <div
                     className={cn(
-                      "absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 transform origin-top-left",
+                      "absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-red ring-opacity-5 transition-all duration-200 transform origin-top-left",
                       aboutDropdownOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none",
                     )}
                   >
@@ -99,7 +99,7 @@ const Navbar = () => {
                         <Link
                           key={item.name}
                           href={item.href}
-                          className="block px-4 py-2 text-sm text-brown-900 hover:bg-cream-100 hover:text-orange-600"
+                          className="block px-4 py-2 text-sm text-brown-900 hover:bg-cream-100 hover:text-red-600"
                           onClick={() => {
                             setAboutDropdownOpen(false)
                             closeMenu()
@@ -118,10 +118,10 @@ const Navbar = () => {
                   className={cn(
                     "font-medium transition-colors",
                     pathname === link.href
-                      ? "text-orange-600"
+                      ? "text-red-600"
                       : isScrolled
-                        ? "text-brown-900 hover:text-orange-600"
-                        : "text-black hover:text-orange-400",
+                        ? "text-brown-900 hover:text-red-600"
+                        : "text-red hover:text-red-400",
                   )}
                 >
                   {link.name}
@@ -137,8 +137,8 @@ const Navbar = () => {
             className={cn(
               "hidden md:inline-flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-300",
               isScrolled
-                ? "bg-orange-600 text-white hover:bg-orange-700"
-                : "bg-white text-orange-600 hover:bg-cream-100",
+                ? "bg-red-600 text-white hover:bg-red-700"
+                : "bg-white text-red-600 hover:bg-cream-100",
             )}
           >
             Daftar
@@ -149,7 +149,7 @@ const Navbar = () => {
             {isOpen ? (
               <X className={isScrolled ? "text-brown-900" : "text-white"} size={24} />
             ) : (
-              <Menu className={isScrolled ? "text-brown-900" : "text-white"} size={24} />
+              <Menu className={isScrolled ? "text-red-600" : "text-white"} size={24} />
             )}
           </button>
         </div>
@@ -184,7 +184,7 @@ const Navbar = () => {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block py-2 text-brown-800 hover:text-orange-600"
+                        className="block py-2 text-brown-800 hover:text-red-600"
                         onClick={closeMenu}
                       >
                         {item.name}
@@ -198,7 +198,7 @@ const Navbar = () => {
                   href={link.href}
                   className={cn(
                     "font-medium py-2 border-b border-gray-200",
-                    pathname === link.href ? "text-orange-600" : "text-brown-900 hover:text-orange-600",
+                    pathname === link.href ? "text-red-600" : "text-brown-900 hover:text-red-600",
                   )}
                   onClick={closeMenu}
                 >
@@ -209,7 +209,7 @@ const Navbar = () => {
             <Link
               href="https://forms.gle/zTH1AFoJSJfyk1WKA"
               target="_blank"
-              className="mt-4 inline-flex items-center justify-center px-4 py-3 rounded-lg font-medium bg-orange-600 text-white hover:bg-orange-700 transition-colors"
+              className="mt-4 inline-flex items-center justify-center px-4 py-3 rounded-lg font-medium bg-red-600 text-white hover:bg-red-700 transition-colors"
               onClick={closeMenu}
             >
               Daftar Sekarang

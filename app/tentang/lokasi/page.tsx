@@ -117,7 +117,7 @@ export default function JadwalDanLokasiPage() {
               <a
                 href="https://forms.gle/zTH1AFoJSJfyk1WKA"
                 target="_blank"
-                className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                 rel="noreferrer"
               >
                 Daftar Sekarang
@@ -134,22 +134,22 @@ export default function JadwalDanLokasiPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
             {locations.map((location, index) => (
-              <button
+              <div
                 key={index}
-                onClick={() => setActiveLocation(index)}
                 className={cn(
                   "p-6 rounded-xl shadow-md transition-all duration-300 text-mid",
                   activeLocation === index
-                    ? "bg-orange-600 text-white transform scale-105"
+                    ? "bg-brown-900 text-white transform scale-105"
                     : "bg-white text-brown-900 hover:bg-cream-100"
                 )}
               >
                 <h3 className="text-xl font-bold mb-2">{location.name}</h3>
-                <p className={activeLocation === index ? "text-white/90" : "text-brown-800"}>{location.address}</p>
-              </button>
+                <p className={activeLocation === index ? "text-white/90" : "text-brown-800"}>
+                  {location.address}
+                </p>
+              </div>
             ))}
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="h-96 w-full">

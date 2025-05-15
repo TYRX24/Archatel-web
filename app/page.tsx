@@ -21,7 +21,7 @@ export default function Home() {
           <Link
             href="https://forms.gle/zTH1AFoJSJfyk1WKA"
             target="_blank"
-            className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-xl font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             DAFTAR SEKARANG
             <ChevronRight className="ml-2 h-5 w-5" />
