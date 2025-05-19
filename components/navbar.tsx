@@ -90,7 +90,7 @@ const Navbar = () => {
                   </button>
                   <div
                     className={cn(
-                      "absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-red ring-opacity-5 transition-all duration-200 transform origin-top-left",
+                      "absolute left-0 mt-4 w-48 rounded-md shadow-lg bg-white ring-1 ring-red ring-opacity-5 transition-all duration-200 transform origin-top-left",
                       aboutDropdownOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none",
                     )}
                   >
