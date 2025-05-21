@@ -49,6 +49,7 @@ const Navbar = () => {
       ],
     },
     { name: "Struktur Organisasi", href: "/struktur" },
+    { name: "Gallery", href: "/gallery  " },
     // { name: "Panduan", href: "/panduan" },
   ]
 
