@@ -2,13 +2,13 @@ import Image from "next/image"
 
 const organizationMembers = [
   {
-    name: "Ahmad Fauzi",
-    position: "Ketua Komunitas",
+    name: "Muhammad Nafis Rahmat",
+    position: "Ketua Archatel",
     image: "/placeholder.svg?height=300&width=300",
     bio: "Pemanah profesional dengan pengalaman lebih dari 15 tahun di bidang panahan nasional dan internasional.",
   },
   {
-    name: "Siti Nurhaliza",
+    name: "Muhammad Tegar Ramadhan",
     position: "Wakil Ketua",
     image: "/placeholder.svg?height=300&width=300",
     bio: "Mantan atlet panahan nasional dengan berbagai prestasi di tingkat Asia Tenggara.",
