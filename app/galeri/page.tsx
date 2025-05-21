@@ -4,7 +4,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
 const images = [
-  "/images/Gallery/DSC00278.JPG",
+  "/images/gallery/DSC00278.JPG",
   "/images/gallery2.jpg",
   "/images/gallery3.jpg",
   "/images/gallery4.jpg",
