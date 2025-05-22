@@ -2,6 +2,8 @@
 
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import Image from "next/image"
+
 
 const images = [
   "/images/gallery/gallery1.jpg",
